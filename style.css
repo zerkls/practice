@@ -1,1 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html, body{
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.header {
+    background: #f0f8ff; /* Пример цвета фона */
+    width: 100%; /* На всю ширину */
+    padding: 10px 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav a {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+.header__nav a.active {
+    opacity: 1;
+}
+
+
 
