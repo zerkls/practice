@@ -18,6 +18,11 @@ ul{
     margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+
 .container{
     max-width: 1140px;
     margin-left: auto;
@@ -25,8 +30,9 @@ ul{
     padding: 0 15px;
 }
 
+/*- Шапка */
 .header {
-    background: #f0f8ff; /* Пример цвета фона */
+    background: #ffffff; /* Пример цвета фона */
     width: 100%; /* На всю ширину */
     padding: 10px 0;
 }
@@ -60,5 +66,178 @@ ul{
     opacity: 1;
 }
 
+/*- Приветственная секция */
+.main {
+
+}
+
+.welcome {
+    padding: 240px 0;
+    background-image: url("/resources/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__text {
+    width: 700px;
+}
 
 
+.welcome__subtitle {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.welcome__title {
+    font-size: 58px;
+}
+
+.welcome__desc {
+    margin: 40px 0;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/*- Аннотация проекта */
+
+.annotation__text {
+    
+}
+
+.annotation__subtitle {
+    
+    font-size: 20px;
+}
+
+.annotation {
+    padding: 100px 0;
+}
+.annotation__title {
+    margin-bottom: 40px;
+    font-size: 58px;
+}
+.annotation__desc {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.annotation__dark {
+    padding: 100px 0;
+    background-color: #0053ac;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/*- Поддержка */
+
+.support {
+    padding: 100px;
+}
+
+.support__img {
+
+}
+
+.support__text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.support .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.support__text::before {
+    content: url("/resources/quotes.png");
+}
+
+.support__desc {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.support_author {
+    font-style: normal;
+}
+
+.quotes__img {
+    flex-direction: column;
+}
+
+/*- Подвал */
+
+footer {
+    background-color: #0053ac;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+        
+.footer-section {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            min-width: 200px;
+}
+    
+.logo {
+            width: 120px;
+            margin-bottom: 20px;
+}
+        
+.footer-links {
+            display: flex;
+            flex-direction: column;
+}
+        
+.footer-links a {
+            color: #ecf0f1;
+            margin-bottom: 8px;
+            font-size: 14px;
+            transition: color 0.3s;
+}
+
+.footer-menu {
+            display: flex;
+            flex-direction: column;
+            
+}
+        
+.footer-menu a {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+}
+
+.logo-secondary {
+            width: 100px;
+            margin-bottom: 20px;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-texel{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
