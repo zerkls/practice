@@ -43,14 +43,6 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
 }
 
-.header__logo {
-
-}
-
-.header__nav {
-
-}
-
 .header__list {
     display: flex;
     gap: 30px;
@@ -67,9 +59,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*- Приветственная секция */
-.main {
-
-}
 
 .welcome {
     padding: 240px 0;
@@ -106,7 +95,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .annotation__subtitle {
-    
     font-size: 20px;
 }
 
@@ -139,10 +127,6 @@ h1,h2,h3,h4,h5,h6{
 
 .support {
     padding: 100px;
-}
-
-.support__img {
-
 }
 
 .support__text {
@@ -281,26 +265,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Блок 3: Текст с описанием */
-.text-section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.text-section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #0053ac;
-}
-
-.text-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Блок 4: Картинка + текст */
 .image-text-section {
     display: flex;
@@ -336,23 +300,89 @@ footer {
 }
 
 /* Блок 5: Еще текст с описанием */
-.another-text-section {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-}
-
-.another-text-section .container {
-    max-width: 800px;
-}
-
-.another-text-section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #2c3e50;
-    text-align: center;
-}
 
 .title__formaintext{
     font-size: 32px;
     margin-bottom: 30px;
+}
+
+/* Участники */
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.member {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 4px solid;
+}
+
+.member-header {
+    padding: 20px;
+    position: relative;
+}
+
+.role {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.member-position {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.member-body {
+    padding: 0 20px 20px;
+}
+
+.member-contribution {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.member-contribution li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.member-contribution li:before {
+    content: "•";
+    color: #0053ac;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
