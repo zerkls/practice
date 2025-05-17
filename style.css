@@ -431,3 +431,20 @@ footer {
     border-radius: 20px;
     margin-bottom: 150px;
 }
+
+/* Ресурсы */
+
+.partner-link {
+    color: #0066cc; 
+    text-decoration: none; 
+    font-weight: normal; 
+}
+
+.partner-link:hover {
+    text-decoration: underline; 
+}
+
+.partner-block {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
