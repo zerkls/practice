@@ -7,6 +7,7 @@
     <title>AboutProject</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./DownloadImages.js"></script>  
+    <script src="./Slider.js"></script>
 </head>
 <body>
     <header class="header">
@@ -68,7 +69,28 @@
                     <p>Веб-панель (статистика стилей, рекомендации по покупкам).</p>
                 </div>
                 <div class="image-content">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./resources/Фото_texel1.png" alt="Наши преимущества" class="lazy-load">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide active">
+                                <img src="./resources/пример_нейрофоторамки1.jpeg" alt="Слайд 1">
+                            </div>
+                            <div class="slide">
+                                <img src="./resources/пример_нейрофоторамки2.jpg" alt="Слайд 2" >
+                            </div>
+                            <div class="slide">
+                                <img src="./resources/пример_нейрофоторамки3.jpg" alt="Слайд 3" >
+                            </div>
+                        </div>
+
+                        <button class="slider-btn prev">←</button>
+                        <button class="slider-btn next">→</button>
+
+                        <div class="dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
